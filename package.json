@@ -1,0 +1,32 @@
+{
+  "name": "algojo",
+  "version": "1.0.0",
+  "description": "An Open-Source Data Structure and Algorithm Library for JavaScript",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ukhang/algojo.git"
+  },
+  "keywords": [
+    "Data Structure and Algorithm JavaScript Library",
+    "DSA js",
+    "algojo"
+  ],
+  "author": "Ukhang Marma <ukhangmarma459@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ukhang/algojo/issues"
+  },
+  "homepage": "https://github.com/Ukhang/algojo#readme",
+  "devDependencies": {
+    "typescript": "^4.6.3"
+  },
+  "files": [
+    "lib/**/*"
+  ]
+}
