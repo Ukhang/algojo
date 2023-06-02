@@ -23,7 +23,7 @@
 npm install algojo --save
 ```
 
-## Demo 👨‍💻
+## Demo 💻
 ```js
 import { linarSearch } from "algojo";
 
