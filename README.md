@@ -4,7 +4,7 @@
 </div>
 
 <p align="center">
-  <strong>An Open-Source Data Structure and Algorithm Javascript Libarary 👩‍💻</strong>
+  <strong>An Open-Source Data Structure and Algorithm Libarary for Javascript 👩‍💻</strong>
 </p>
 
 <div align="center">
