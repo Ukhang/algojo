@@ -4,7 +4,7 @@
  * @param  {Array} array The array to search.
  * @param  {number} value The value to search for.
  * @return {number} The index of the value in the array, or -1 if the value is not found.
-*/
+ */
 /*
 | Case | Time Complexity |
 |---|---|
@@ -32,7 +32,7 @@ export function linearSearch(arr: Array<number>, value: number): number {
  * @param  {Array} array The array to search.
  * @param  {number} value The value to search for.
  * @return {number} The index of the value in the array, or -1 if the value is not found.
-*/
+ */
 /*
 | Case | Time Complexity |
 |---|---|
@@ -69,7 +69,7 @@ export function binarySearch(array: Array<number>, value: number): number {
  * @param  {Array} array The array to search.
  * @param  {number} value The value to search for.
  * @return {number} The index of the value in the array, or -1 if the value is not found.
-*/
+ */
 /*
 | Case | Time Complexity |
 |---|---|
@@ -108,7 +108,7 @@ export function jumpSearch(array: Array<number>, value: number): number {
  * @param  {Array} array The array to search.
  * @param  {number} value The value to search for.
  * @return {number} The index of the value in the array, or -1 if the value is not found.
-*/
+ */
 /*
 | Case | Time Complexity |
 |---|---|
@@ -126,7 +126,8 @@ export function interpolationSearch(array: Array<number>, value: number): number
   let high = array.length - 1;
 
   while (low <= high) {
-    let mid = low + (high - low) * (value - array[low]) / (array[high] - array[low]);
+    let mid =
+      low + ((high - low) * (value - array[low])) / (array[high] - array[low]);
 
     if (array[mid] === value) {
       return mid;
@@ -134,6 +135,58 @@ export function interpolationSearch(array: Array<number>, value: number): number
       low = mid + 1;
     } else {
       high = mid - 1;
+    }
+  }
+
+  return -1;
+};
+
+/**
+ * @name: Fibonacci Search
+ * @param  {Array} array The array to search.
+ * @param  {number} value The value to search for.
+ * @return {number} The index of the value in the array, or -1 if the value is not found.
+*/
+/*
+| Case | Time Complexity |
+|---|---|
+| Best case | Ω(1) |
+| Worst case | O(log n) |
+| Average case | Θ(log n) |
+*/
+/*
+| Case | Space Complexity |
+|---|---|
+| Worst Case | O(1) |
+*/
+export function fibonacciSearch(array: Array<number>, value: number): number {
+  let fibs: number[] = [];
+  fibs[0] = 0;
+  fibs[1] = 1;
+  for (let i = 2; i < array.length; i++) {
+    fibs[i] = fibs[i - 1] + fibs[i - 2];
+  }
+
+  let fib = fibs.find((fib: number) => fib >= array.length);
+
+  if (fib !== undefined) {
+    let lo = 0;
+    let hi = array.length - 1;
+
+    let mid;
+    if (fib !== undefined) {
+      mid =
+        lo + ((hi - lo) * (value - array[lo])) / (array[fib - 1] - array[lo]);
+    } else {
+      mid = -1;
+    }
+
+    if (array[mid] === value) {
+      return mid;
+    } else if (array[mid] < value) {
+      lo = mid + 1;
+    } else {
+      hi = mid - 1;
     }
   }
 
