@@ -17,24 +17,24 @@
   
 </div>
 
-## Installation
+## Installation ⚙️
 
 ```bash 
 npm install algojo --save
 ```
 
-## Demo
+## Demo 👨‍💻
 ```js
 import { linarSearch } from "algojo";
 
 console.log(linearSearch([1, 2, 3, 4, 5, 6, 7], 5)); // 4
 ```
 
-## Contributions
+## Contributions ✨
 algojo is open to contributions, Please read [CONTRIBUTING.md](https://github.com/Ukhang/algojo/blob/main/CONTRIBUTING.md) for details on this project.
 
-## Algorithms
-- ### Searching Algorithm
+## Algorithms 🧠
+- ### Searching Algorithm 🔍
 | Name | Params | Time Complexity | Space Complexity |
 |---|---|---|---|
 | Linear Search | Array, number | O(n) | O(1) |
