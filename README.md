@@ -32,3 +32,5 @@ console.log(linearSearch([1, 2, 3, 4, 5, 6, 7], 5)); // 4
 
 ## Contributions
 algojo is open to contributions, Please read CONTRIBUTING.md for details on this project.
+
+
