@@ -13,12 +13,19 @@
   [![Package version](https://img.shields.io/github/package-json/v/Ukhang/algojo)](https://www.npmjs.com/package/algojo)
   [![Github Contributors](https://img.shields.io/github/contributors/Ukhang/algojo?color=green)](https://github.com/Ukhang/algojo/graphs/contributors)
   
+  [![NPM](https://nodei.co/npm/algojo.png)](https://nodei.co/npm/algojo)
+  
 </div>
 
-[![NPM](https://nodei.co/npm/algojo.png)](https://nodei.co/npm/algojo)
-
-<h2> Installation </h1>
+## Installation
 
 ```bash 
 npm install algojo --save
+```
+
+## Demo
+```bash
+import { linarSearch } from "algojo";
+
+console.log(linearSearch([1, 2, 3, 4, 5, 6, 7], 5)); // 4
 ```
