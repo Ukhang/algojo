@@ -24,7 +24,7 @@ npm install algojo --save
 ```
 
 ## Demo
-```bash
+```js
 import { linarSearch } from "algojo";
 
 console.log(linearSearch([1, 2, 3, 4, 5, 6, 7], 5)); // 4
