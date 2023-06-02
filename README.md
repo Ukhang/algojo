@@ -31,6 +31,6 @@ console.log(linearSearch([1, 2, 3, 4, 5, 6, 7], 5)); // 4
 ```
 
 ## Contributions
-algojo is open to contributions, Please read [CONTRIBUTING.md](https://github.com/Ukhang/algojo) for details on this project.
+algojo is open to contributions, Please read [CONTRIBUTING.md](https://github.com/Ukhang/algojo/blob/main/CONTRIBUTING.md) for details on this project.
 
 
