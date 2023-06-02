@@ -13,6 +13,6 @@
   [![Package version](https://img.shields.io/github/package-json/v/Ukhang/algojo)](https://www.npmjs.com/package/algojo)
   [![Github Contributors](https://img.shields.io/github/contributors/Ukhang/algojo?color=green)](https://github.com/Ukhang/algojo/graphs/contributors)
   
+  [![NPM](https://nodei.co/npm/algojo.png)](https://nodei.co/npm/algojo)
+  
 </div>
-
-[![NPM](https://nodei.co/npm/algojo.png)](https://nodei.co/npm/algojo)
