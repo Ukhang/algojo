@@ -42,3 +42,4 @@ algojo is open to contributions, Please read [CONTRIBUTING.md](https://github.co
 | Jump Search | Array, number | O(n) | O(1) |
 | interpolation Search | Array, number | O(log n) | O(1) |
 | Fibonacci Search | Array, number | O(log n) | O(1) |
+
