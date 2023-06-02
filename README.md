@@ -33,4 +33,12 @@ console.log(linearSearch([1, 2, 3, 4, 5, 6, 7], 5)); // 4
 ## Contributions
 algojo is open to contributions, Please read [CONTRIBUTING.md](https://github.com/Ukhang/algojo/blob/main/CONTRIBUTING.md) for details on this project.
 
-
+## Algorithms
+- ### Searching Algorithm
+| Name | Params | Time Complexity | Space Complexity |
+|---|---|---|---|
+| Linear Search | Array, number | O(n) | O(1) |
+| Binary Search | Array, number | O(log n) | O(1) |
+| Jump Search | Array, number | O(n) | O(1) |
+| interpolation Search | Array, number | O(log n) | O(1) |
+| Fibonacci Search | Array, number | O(log n) | O(1) |
