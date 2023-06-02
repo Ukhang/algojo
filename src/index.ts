@@ -102,3 +102,40 @@ export function jumpSearch(array: Array<number>, value: number): number {
 
   return -1;
 };
+
+/**
+ * @name: interpolation Search
+ * @param  {Array} array The array to search.
+ * @param  {number} value The value to search for.
+ * @return {number} The index of the value in the array, or -1 if the value is not found.
+*/
+/*
+| Case | Time Complexity |
+|---|---|
+| Best case | Ω(1) |
+| Worst case | O(log n) |
+| Average case | Θ(log log n) |
+*/
+/*
+| Case | Space Complexity |
+|---|---|
+| Worst Case | O(1) |
+*/
+export function interpolationSearch(array: Array<number>, value: number): number {
+  let low = 0;
+  let high = array.length - 1;
+
+  while (low <= high) {
+    let mid = low + (high - low) * (value - array[low]) / (array[high] - array[low]);
+
+    if (array[mid] === value) {
+      return mid;
+    } else if (array[mid] < value) {
+      low = mid + 1;
+    } else {
+      high = mid - 1;
+    }
+  }
+
+  return -1;
+};
