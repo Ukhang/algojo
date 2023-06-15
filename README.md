@@ -44,7 +44,7 @@ algojo is open to contributions, Please read [CONTRIBUTING.md](https://github.co
 | interpolation Search | Array, number | O(log n) | O(1) |
 | Fibonacci Search | Array, number | O(log n) | O(1) |
 
-- ### Sorting Algorithm 🔍
+- ### Sorting Algorithm 📊
 | Name | Params | Time Complexity | Space Complexity |
 |---|---|---|---|
 | Bubble Search | Array, number | O(n^2) | O(1) |
