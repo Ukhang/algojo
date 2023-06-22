@@ -229,3 +229,41 @@ export function bubbleSearch(arr: Array<number>, value: number): number {
 
   return -1;
 };
+
+
+/**
+ * @name: Selection Sort
+ * @param  {Array} array The array to sort.
+ * @return {Array} The sorted array.
+ */
+/*
+| Case | Time Complexity |
+|---|---|
+| Best Case | Ω(n^2) |
+| Worst Case | O(n^2) |
+| Average Case | Θ(n^2) |
+*/
+/**
+| Case | Space Complexity |
+|---|---|
+| Worst Case | O(1) | 
+*/
+export function selectionSort(arr: Array<number>): Array<number> {
+  let n = arr.length;
+  for (let i = 0; i < n - 1; i++) {
+    // Find the minimum element in the unsorted subarray.
+    let minIndex = i;
+    for (let j = i + 1; j < n; j++) {
+      if (arr[j] < arr[minIndex]) {
+        minIndex = j;
+      }
+    }
+
+    // Swap the minimum element with the first element in the unsorted subarray.
+    let temp = arr[i];
+    arr[i] = arr[minIndex];
+    arr[minIndex] = temp;
+  }
+
+  return arr;
+};
