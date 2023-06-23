@@ -267,3 +267,38 @@ export function selectionSort(arr: Array<number>): Array<number> {
 
   return arr;
 };
+
+
+/**
+ * @name: Insertion Sort
+ * @param  {Array} arr The array to sort.
+ * @return {Array} The sorted array in ascending order.
+ */
+/*
+| Case | Time Complexity |
+|---|---|
+| Best Case | Ω(n) |
+| Worst Case | O(n^2) |
+| Average Case | Θ(n^2) |
+*/
+/**
+| Case | Space Complexity |
+|---|---|
+| Worst Case | O(1) | 
+*/
+export function insertionSort(arr: number[]): number[] {
+  const len = arr.length;
+  for (let i = 1; i < len; i++) {
+    const key = arr[i];
+    let j = i - 1;
+
+    while (j >= 0 && arr[j] > key) {
+      arr[j + 1] = arr[j];
+      j--;
+    }
+
+    arr[j + 1] = key;
+  }
+
+  return arr;
+}
