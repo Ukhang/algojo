@@ -267,3 +267,96 @@ export function selectionSort(arr: Array<number>): Array<number> {
 
   return arr;
 };
+
+
+/**
+ * @name: Insertion Sort
+ * @param  {Array} arr The array to sort.
+ * @return {Array} The sorted array in ascending order.
+ */
+/*
+| Case | Time Complexity |
+|---|---|
+| Best Case | Ω(n) |
+| Worst Case | O(n^2) |
+| Average Case | Θ(n^2) |
+*/
+/**
+| Case | Space Complexity |
+|---|---|
+| Worst Case | O(1) | 
+*/
+export function insertionSort(arr: number[]): number[] {
+  const len = arr.length;
+  for (let i = 1; i < len; i++) {
+    const key = arr[i];
+    let j = i - 1;
+
+    while (j >= 0 && arr[j] > key) {
+      arr[j + 1] = arr[j];
+      j--;
+    }
+
+    arr[j + 1] = key;
+  }
+
+  return arr;
+}
+
+
+/**
+ * @name: Merge Sort
+ * @param  {Array} arr The array to sort.
+ * @return {Array} The sorted array in ascending order.
+ */
+/*
+| Case | Time Complexity |
+|---|---|
+| Best Case | Ω(n log(n)) |
+| Worst Case | O(n log(n)) |
+| Average Case | Θ(n log(n)) |
+*/
+/**
+| Case | Space Complexity |
+|---|---|
+| Worst Case | O(n) | 
+*/
+export function mergeSort(arr: number[]): number[] {
+  if (arr.length <= 1) {
+    return arr;
+  }
+
+  const mid = Math.floor(arr.length / 2);
+  const left = mergeSort(arr.slice(0, mid));
+  const right = mergeSort(arr.slice(mid));
+
+  return merge(left, right);
+}
+
+function merge(left: number[], right: number[]): number[] {
+  const merged: number[] = [];
+  let i = 0;
+  let j = 0;
+
+  while (i < left.length && j < right.length) {
+    if (left[i] <= right[j]) {
+      merged.push(left[i]);
+      i++;
+    } else {
+      merged.push(right[j]);
+      j++;
+    }
+  }
+
+  while (i < left.length) {
+    merged.push(left[i]);
+    i++;
+  }
+
+  while (j < right.length) {
+    merged.push(right[j]);
+    j++;
+  }
+
+  return merged;
+}
