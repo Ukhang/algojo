@@ -50,3 +50,8 @@ algojo is open to contributions, Please read [CONTRIBUTING.md](https://github.co
 | Selection Sort | Array | O(n^2) | O(1) |
 | Insertion Sort | Array | O(n^2) | O(1) |
 | Merge Sort | Array | O(n log(n)) | O(n) |
+
+## contributors 👨‍💻
+<a href="https://github.com/Ukhang/algojo/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Ukhang/algojo"/>
+</a>
