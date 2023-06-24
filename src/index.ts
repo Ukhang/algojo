@@ -195,43 +195,6 @@ export function fibonacciSearch(array: Array<number>, value: number): number {
 
 // ========================== Sorting Algorithms ==========================
 /**
- * @name: Bubble Search
- * @param  {Array} array The array to search.
- * @param  {number} value The value to search for.
- * @return {number} The index of the value in the array, or -1 if the value is not found.
- */
-/*
-| Case | Time Complexity |
-|---|---|
-| Best Case | Ω(n) |
-| Worst Case | O(n^2) |
-| Average Case | Θ(n^2) |
-*/
-/**
-| Case | Space Complexity |
-|---|---|
-| Worst Case | O(1) | 
-*/
-export function bubbleSearch(arr: Array<number>, value: number): number {
-  let n = arr.length;
-  for (let i = 0; i < n - 1; i++) {
-    for (let j = 0; j < n - i - 1; j++) {
-      if (arr[j] === value) {
-        return j;
-      }
-      if (arr[j] > arr[j + 1]) {
-        let temp = arr[j];
-        arr[j] = arr[j + 1];
-        arr[j + 1] = temp;
-      }
-    }
-  }
-
-  return -1;
-};
-
-
-/**
  * @name: Selection Sort
  * @param  {Array} array The array to sort.
  * @return {Array} The sorted array.

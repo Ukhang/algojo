@@ -47,4 +47,6 @@ algojo is open to contributions, Please read [CONTRIBUTING.md](https://github.co
 - ### Sorting Algorithm 📊
 | Name | Params | Time Complexity | Space Complexity |
 |---|---|---|---|
-| Bubble Search | Array, number | O(n^2) | O(1) |
+| Selection Sort | Array | O(n^2) | O(1) |
+| Insertion Sort | Array | O(n^2) | O(1) |
+| Merge Sort | Array | O(n log(n)) | O(n) |
