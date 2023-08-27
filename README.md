@@ -12,7 +12,6 @@
   [![GitHub licence](https://img.shields.io/github/license/Ukhang/algojo)](https://github.com/Ukhang/algojo/blob/main/LICENSE)
   [![Package version](https://img.shields.io/github/package-json/v/Ukhang/algojo)](https://www.npmjs.com/package/algojo)
   [![Github Contributors](https://img.shields.io/github/contributors/Ukhang/algojo?color=green)](https://github.com/Ukhang/algojo/graphs/contributors)
-  [![Npm Downloads](https://img.shields.io/npm/dw/algojo)](https://www.npmjs.com/package/algojo)
   
   [![NPM](https://nodei.co/npm/algojo.png)](https://nodei.co/npm/algojo)
   
