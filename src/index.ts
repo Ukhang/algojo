@@ -15,7 +15,7 @@
 /**
 | Case | Space Complexity |
 |---|---|
-| Worst Case | O(1) | 
+| Worst Case | O(1) |
 */
 export function linearSearch(arr: Array<number>, value: number): number {
   for (let i = 0; i < arr.length; i++) {
@@ -209,7 +209,7 @@ export function fibonacciSearch(array: Array<number>, value: number): number {
 /**
 | Case | Space Complexity |
 |---|---|
-| Worst Case | O(1) | 
+| Worst Case | O(1) |
 */
 export function selectionSort(arr: Array<number>): Array<number> {
   let n = arr.length;
@@ -247,7 +247,7 @@ export function selectionSort(arr: Array<number>): Array<number> {
 /**
 | Case | Space Complexity |
 |---|---|
-| Worst Case | O(1) | 
+| Worst Case | O(1) |
 */
 export function insertionSort(arr: number[]): number[] {
   const len = arr.length;
@@ -282,7 +282,7 @@ export function insertionSort(arr: number[]): number[] {
 /**
 | Case | Space Complexity |
 |---|---|
-| Worst Case | O(n) | 
+| Worst Case | O(n) |
 */
 export function mergeSort(arr: number[]): number[] {
   if (arr.length <= 1) {
@@ -322,4 +322,34 @@ function merge(left: number[], right: number[]): number[] {
   }
 
   return merged;
+}
+/**
+ * @name: Bubble Sort
+ * @param  {Array} arr The array to sort.
+ * @return {Array} The sorted array in ascending order.
+ */
+/*
+| Case | Time Complexity |
+|---|---|
+| Best Case | Ω(n) |
+| Worst Case | O(n^2) |
+| Average Case | Θ(n^2) |
+*/
+/**
+| Case | Space Complexity |
+|---|---|
+| Worst Case | O(1) |
+*/
+export function bubbleSort(arr: number[]): number[] {
+  const len = arr.length;
+
+    for (let i = 0; i < len; i++) {
+        for (let j = 0; j < len; j++) {
+            if (arr[j] > arr[j + 1]) {
+                [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
+            }
+        }
+    }
+
+    return arr;
 }
