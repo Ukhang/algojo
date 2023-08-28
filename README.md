@@ -49,6 +49,7 @@ algojo is open to contributions, Please read [CONTRIBUTING.md](https://github.co
 | Selection Sort | Array | O(n^2) | O(1) |
 | Insertion Sort | Array | O(n^2) | O(1) |
 | Merge Sort | Array | O(n log(n)) | O(n) |
+| Bubble Sort | Array | O(n^2) | O(1) |
 
 ## All contributors 👨‍💻
 <a href="https://github.com/Ukhang/algojo/graphs/contributors">
